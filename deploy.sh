@@ -139,7 +139,7 @@ checkDockerContainer() {
     else
         echo "[INFO] ----begin run $containerName container."
         
-        sudo docker run -d -p 8888:8888 -e HOST_IP=$localAddress -e PROGRAM_NAME=$programName -e START_FLAG=$programStartFlag -e BIN_PATH=$containerBinPath -e CONFIG_PATH=$containerConfigPath -e DATA_PATH=$containerDataPath -e LOG_PATH=$containerLogPath -v $hostBinPath:$containerBinPath -v $hostConfigPath:$containerConfigPath -v $hostDataPath:$containerDataPath -v $hostLogPath:$containerLogPath --restart always --name $containerName $imageNameVersion
+        sudo docker run -d -p 6666:6666 -e HOST_IP=$localAddress -e PROGRAM_NAME=$programName -e START_FLAG=$programStartFlag -e BIN_PATH=$containerBinPath -e CONFIG_PATH=$containerConfigPath -e DATA_PATH=$containerDataPath -e LOG_PATH=$containerLogPath -v $hostBinPath:$containerBinPath -v $hostConfigPath:$containerConfigPath -v $hostDataPath:$containerDataPath -v $hostLogPath:$containerLogPath --restart always --name $containerName $imageNameVersion
     fi
 }
 checkDockerContainer

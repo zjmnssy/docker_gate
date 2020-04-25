@@ -2,12 +2,12 @@
     "serviceDesc": {
         "serviceType": "apiGate",
         "serverID": "apiGate-1",
-        "address": "172.31.138.216:8888",
+        "address": "172.31.138.216:6666",
         "version": "20200312001",
         "weight": "3"
     },
     "server": {
-        "address": "0.0.0.0:8888",
+        "address": "0.0.0.0:6666",
         "ca": "/root/service/config/tls/ca.pem",
         "cert": "/root/service/config/tls/etcd.pem",
         "key": "/root/service/config/tls/etcd-key.pem",

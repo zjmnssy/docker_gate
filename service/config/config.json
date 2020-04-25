@@ -36,7 +36,7 @@
         ],
         "ca": "/root/service/config/tls/ca.pem",
         "cert": "/root/service/config/tls/etcd.pem",
-        "key": "/root/service/config/tls/etcd-key.pem",
+        "key": "/root/service/config/tls/etcd-key.pem"
     },
     "sql" : {
         "account": "root",

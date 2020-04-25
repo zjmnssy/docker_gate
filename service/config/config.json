@@ -1,0 +1,46 @@
+{
+    "serviceDesc": {
+        "serviceType": "apiGate",
+        "serverID": "apiGate-1",
+        "address": "172.31.138.216:8888",
+        "version": "20200312001",
+        "weight": "3"
+    },
+    "server": {
+        "address": "0.0.0.0:8888",
+        "ca": "/root/service/config/tls/ca.pem",
+        "cert": "/root/service/config/tls/etcd.pem",
+        "key": "/root/service/config/tls/etcd-key.pem",
+        "jwtKey": "123456",
+        "jwtValidity": 3600
+    },
+    "log": {
+        "filePath": "/root/service/log",
+        "levels": 63,
+        "filePrefix": "zaa",
+        "modules": [
+            "all"
+        ],
+        "isTimeSplit": true,
+        "splitPeriod": 10,
+        "isSizeSplit": true,
+        "splitSize": 10,
+        "isCycleClear": true,
+        "savePeriod": 10
+    },
+    "etcd": {
+        "useTLS": true,
+        "serverName": "www.3344.fun",
+        "nodes": [
+            "172.31.138.216:2379"
+        ],
+        "ca": "/root/service/config/tls/ca.pem",
+        "cert": "/root/service/config/tls/etcd.pem",
+        "key": "/root/service/config/tls/etcd-key.pem",
+    },
+    "sql" : {
+        "account": "root",
+        "password": "123456",
+        "address": "172.31.138.216:3306"
+    }
+}
